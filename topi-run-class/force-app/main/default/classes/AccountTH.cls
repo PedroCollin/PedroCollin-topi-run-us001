@@ -16,7 +16,8 @@ public with sharing class AccountTH extends TriggerHandler {
         this.filter = new AccountFilter();
         this.eventEnricher = new AccountEventEnricher();
     }
-
+    
+    virtual
     override
     public void afterInsert() {
         createEventForPremiumAccountWithAnnualRevenueOverOneMillion();
