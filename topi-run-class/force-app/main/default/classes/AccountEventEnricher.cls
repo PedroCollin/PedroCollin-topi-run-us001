@@ -1,7 +1,7 @@
 /**
  * @author Pedro Collin
  */
-public with sharing class AccountEventEnricher {
+public class AccountEventEnricher {
     EventRepository repository;
 
     public AccountEventEnricher() {
